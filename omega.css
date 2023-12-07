@@ -1,0 +1,266 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    border: 3px solid rgb(245, 243, 243);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo h1{
+    font-size: 2.5rem;
+    font-weight:lighter;
+    background-color: white;
+    color:black;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+}
+
+.logo h1::first-letter{
+    color: #c40808;
+    font-size: 2.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    color:#c40808;
+}
+
+.container-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-block-start: 50px;
+    background-color: black;
+
+}
+
+.container-1 aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.container-1 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+    background-color: black;
+}
+
+main h2{
+
+    color: rgb(180, 179, 179);
+    letter-spacing: 3px;
+    font-size: 5rem;
+    font-weight: lighter;
+  
+}
+
+main h2::first-letter{
+    color: #a10808;
+    font-size: 7rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-1 main p{
+    color:rgb(180, 179, 179);
+    font-size: 1.7rem;
+    font-family:cursive;
+    
+}
+
+.container-1 button{
+    padding: 6px;
+    margin-block-start: 20px;
+    border-radius: 10px;
+    background-color: #a10808;
+}
+
+.container-1 main a{
+    text-decoration: none;
+    color: rgb(180, 179, 179);
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block-start: 50px;
+   
+}
+
+.d-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 400px;
+    flex: 1;
+   
+}
+
+.d-1 h2{
+    font-size: 4rem;
+}
+.d-1 span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.d-1 a{
+    padding-block-start: 20px;
+    color: #000;
+}
+
+.d-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid black;
+    min-width: 400px;
+}
+
+
+.d-2 img{
+    padding-block-start: 0;
+}
+
+.d-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid black;
+    min-width: 400px;
+}
+
+.container-2 h3{
+    padding-block: 10px;
+}
+
+button{
+    background-color: #a10808;
+    border-radius: 5px;
+}
+button a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.container-3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-start: 50px;
+    background-color: black;
+    
+}
+
+.d-4{
+    display: flex;
+    height: auto;
+    min-width: 400px;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+.d-4 h2{
+    color: white;
+    font-size: 4rem;
+}
+.d-4 span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #a10808;
+}
+.d-4 a{
+    padding-block-start: 20px;
+    color:white;
+}
+
+.d-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    min-width: 400px;
+    flex: 2;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.d-5 .models{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+    border: 1px solid white;
+    padding-block: 10px;
+    min-width: 275px;
+    
+}
+
+.d-5 h3{
+    color: white;
+    padding: 10px;
+}
+
+.footer p{
+    background-color: rgb(139, 136, 136);
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    aside img{
+        width: 450px;
+        height: 470px;
+    }
+}
+
+
